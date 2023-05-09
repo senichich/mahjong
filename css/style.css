@@ -1,0 +1,169 @@
+/* wrapper */
+
+#wrapper {
+  transform-origin: top;
+  width: var(--base-width);
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main */
+
+main {
+  position: relative;
+}
+
+/* footer */
+
+footer {
+  padding-top: 1rem;
+}
+
+#statusText {
+  float: left;
+}
+
+#controls {
+  float: right;
+}
+/* timer */
+#timer {
+  width: 7rem;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: var(--font-color);
+  background-color: var(--button-color);
+  padding: 0px 7px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 100ms linear;
+  border-radius: 0.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* transform: translateX(195px); */
+}
+#timer_time {
+  align-self: center;
+  justify-self: end;
+}
+/* buttons */
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--font-color);
+  background-color: var(--button-color);
+  padding: 5px 15px;
+  margin-left: 10px;
+
+  transition: background-color 100ms linear;
+  border-radius: 0.2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--button-hover-color);
+}
+
+/* games */
+
+#games {
+  height: 100%;
+  padding: 0px 150px;
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transform: translateX(-158px);
+}
+
+/* infotext */
+
+#infoText {
+  height: 100%;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 0px 150px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#infoText a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+#infoText a:hover {
+  color: var(--tile-alert-color);
+}
+
+#infoText ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* game */
+
+#game {
+  height: var(--base-height);
+  background: url("./../img/1305448.jpg") no-repeat center;
+  position: relative;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+/* tile */
+
+.tile {
+  position: absolute;
+}
+
+.tileFront {
+  position: absolute;
+  background-image: linear-gradient(
+    to left top,
+    var(--tile-bottom-right-color),
+    var(--tile-top-left-color)
+  );
+  border: 1px solid var(--tile-border-color);
+}
+
+.tileFront:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to left top,
+    var(--tile-hover-color),
+    var(--tile-hover-color)
+  );
+}
+
+.selectedTile {
+  background-image: linear-gradient(
+    to left top,
+    var(--tile-hover-color),
+    var(--tile-hover-color)
+  );
+}
+
+.alertTile {
+  background-image: linear-gradient(
+    to left top,
+    var(--tile-alert-color),
+    var(--tile-alert-color)
+  );
+}
+
+.tileBack {
+  position: absolute;
+  background-color: var(--tile-back-color);
+  border: 1px solid var(--tile-border-color);
+}

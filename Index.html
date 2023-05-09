@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script type="module" defer src="/js/controller.js"></script>
+    <title>Mahjong</title>
+
+    <link rel="shortcut icon" href="./img/shortcut.png" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="games"><button id="gameShape">Game</button></div>
+        <div></div>
+        <div id="timer">
+          <p>Time :</p>
+          <span id="timer_time">0:00</span>
+        </div>
+      </header>
+      <main>
+        <section id="infoText">
+          <h1>Info about Mahjong</h1>
+          <h3>What does a Mahjong set include?</h3>
+          <p>A complete mahjong set of 144 tiles includes suits, called:</p>
+          <ul>
+            <div>
+              <li>Coins - 36 tiles</li>
+              <!-- <p>
+                <img src="./img/coins1.png" />
+                <img src="./img/coins2.png" />
+                <img src="./img/coins3.png" />
+              </p> -->
+              <li>Characters - 36 tiles</li>
+              <!-- <p>
+                <img src="./img/character1.png" />
+                <img src="./img/character2.png" />
+                <img src="./img/character3.png" />
+              </p> -->
+              <li>Bamboos - 36 tiles</li>
+              <!-- <p>
+                <img src="./img/bamboo1.png" />
+                <img src="./img/bamboo2.png" />
+                <img src="./img/bamboo3.png" />
+              </p> -->
+              <li>Dragons - 14 tiles</li>
+              <!-- <p>
+                <img src="./img/dragon1.png" />
+                <img src="./img/dragon2.png" />
+                <img src="./img/dragon3.png" />
+              </p> -->
+            </div>
+            <div></div>
+            <div>
+              <li>Winds - 14 tiles</li>
+              <!-- <p>
+                <img src="./img/wind1.png" />
+                <img src="./img/wind2.png" />
+                <img src="./img/wind3.png" />
+              </p> -->
+              <li>Flowers - 4 tiles</li>
+              <!-- <p>
+                <img src="./img/flower1.png" />
+                <img src="./img/flower2.png" />
+                <img src="./img/flower3.png" />
+              </p> -->
+              <li>Seasons - 4 tiles</li>
+              <!-- <p>
+                <img src="./img/season1.png" />
+                <img src="./img/season2.png" />
+                <img src="./img/season3.png" />
+              </p> -->
+            </div>
+          </ul>
+          <h3>The basic rules</h3>
+          <p>
+            The 144 tiles are arranged in a four-layer pattern with their faces
+            upwards. A tile is said to be open or exposed if it can be moved
+            either left or right without disturbing other tiles. The goal is to
+            match open pairs of identical tiles and remove them from the board,
+            exposing the tiles under them for play. The game is won when all
+            pairs of tiles have been removed from the board, and lost if the
+            remaining tiles contain no exposed pairs.
+          </p>
+          <!-- 
+          <p>
+            It may happen that you make a wrong move after which the game cannot
+            be won anymore.
+          </p>
+          <p>
+            Check out
+            <a
+              href="https://en.wikipedia.org/wiki/Mahjong_tiles"
+              target="_blank"
+              >Wikipedia</a
+            >
+            for a description of all the 144 tiles. They fall into 7 categories
+            (dots, bamboos, characters, winds, dragons, seasons, flowers). Every
+            tile appears exactly 4 times, except for the 4 seasons
+          </p>
+          <p>
+            <img src="./img/season1.png" />
+            <img src="./img/season2.png" />
+            <img src="./img/season3.png" />
+            <img src="./img/season4.png" />
+          </p>
+          <p>and the 4 flowers</p>
+          <p>
+            <img src="./img/flower1.png" />
+            <img src="./img/flower2.png" />
+            <img src="./img/flower3.png" />
+            <img src="./img/flower4.png" />
+          </p>
+          <p>
+            which each appear only once. For this reason every pair of seasons
+            (or flowers) can be removed as well, even if they are not identical.
+          </p> -->
+        </section>
+
+        <section id="game"></section>
+      </main>
+
+      <footer>
+        <span id="statusText"></span>
+        <span id="controls">
+          <button id="hintButton">Hint</button>
+          <button id="restartButton">Restart</button>
+          <button id="infoButton">Info</button>
+        </span>
+      </footer>
+    </div>
+
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- JS library for DOM operations -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

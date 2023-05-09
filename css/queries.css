@@ -1,0 +1,96 @@
+/* media queries */
+
+@media (max-width: 1010px) {
+  .tile {
+    transform: translateX(-65px);
+  }
+  :root {
+    --base-width: 865px;
+  }
+  #infoText {
+    padding: 0px 80px;
+  }
+}
+
+@media (max-width: 875px) {
+  #wrapper {
+    transform: scale(0.95);
+  }
+
+  footer {
+    padding: 20px 0px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 830px) {
+  #wrapper {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 780px) {
+  #wrapper {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 745px) {
+  #wrapper {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 700px) {
+  #wrapper {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 660px) {
+  #wrapper {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 620px) {
+  #wrapper {
+    transform: scale(0.65);
+  }
+}
+
+@media (max-width: 570px) {
+  #wrapper {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 520px) {
+  #wrapper {
+    transform: scale(0.55);
+  }
+}
+
+@media (max-width: 480px) {
+  #wrapper {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 435px) {
+  #wrapper {
+    transform: scale(0.45);
+  }
+}
+
+@media (max-width: 390px) {
+  #wrapper {
+    transform: scale(0.4);
+  }
+}
+
+@media (max-width: 350px) {
+  #wrapper {
+    transform: scale(0.35);
+  }
+}
